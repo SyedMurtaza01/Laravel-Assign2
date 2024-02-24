@@ -12,16 +12,16 @@
         <a class="nav-link" href="/" style="color: white">Home </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('aboutpage')}}" style="color: white">About us</a>
+        <a class="nav-link" href="{{route('about')}}" style="color: white">About us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('contactpage')}}" style="color: white">Contact us</a>
+        <a class="nav-link" href="{{route('contact')}}" style="color: white">Contact us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('gallerypage')}}" style="color: white">Gallery</a>
+        <a class="nav-link" href="{{route('gallery')}}" style="color: white">Gallery</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('registerpage')}}" style="color: white">Register</a>
+        <a class="nav-link" href="{{route('register')}}" style="color: white">Register</a>
       </li>
     
      

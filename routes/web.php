@@ -14,21 +14,34 @@ use App\Http\Controllers\stdcontroller;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// })->name('homepage');
+Route::get('/', function () {
+    return view('welcome');
+})->name('homepage');
 
-// Route::get('/about', function () {
-//     return view('about');
-// })->name('aboutpage');
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
 
-// Route::get('/contact', function () {
-//     return view('contact');
-// })->name('contactpage');
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
 
+Route::get('/gallery', function () {
+    return view('gallery');
+})->name('gallery');
 
-Route::get('/', [stdcontroller::class , 'home' ])->name('homepage');
-Route::get('/about', [stdcontroller::class , 'about' ])->name('aboutpage');
-Route::get('/contact', [stdcontroller::class , 'contact' ])->name('contactpage');
-Route::get('/gallery', [stdcontroller::class , 'gallery' ])->name('gallerypage');
-Route::get('/register', [stdcontroller::class , 'register_view' ])->name('registerpage');
+Route::get('/register', function () {
+    return view('register');
+})->name('register');
+
+// Route::get('/', [stdcontroller::class , 'home' ])->name('homepage');
+// Route::get('/about', [stdcontroller::class , 'about' ])->name('aboutpage');
+// Route::get('/contact', [stdcontroller::class , 'contact' ])->name('contactpage');
+// Route::get('/gallery', [stdcontroller::class , 'gallery' ])->name('gallerypage');
+// Route::get('/register', [stdcontroller::class , 'register_view' ])->name('registerpage');
+
+// Route::POST('/register', [stdcontroller::class , 'register' ]);
+// Route::get('/contact', [stdcontroller::class , 'contact' ]);
+// Route::get('/aboutpage', [stdcontroller::class , 'aboutpage' ]);
+// Route::get('/gallery', [stdcontroller::class , 'gallery' ]);
+// Route::get('/', [stdcontroller::class , 'home' ]);
